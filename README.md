@@ -22,14 +22,14 @@ The analysis focuses on a network of **N = 6 neurons**, comparing:
 ### Model
 
 We consider the recurrent network:
-\[
-\tau \frac{dh_j}{dt}
-=
+
 -h_j+c_{\mathrm{ff}}
 +\frac{1}{N}\sum_k
 \left[J_I+J_E\cos(\theta_j-\theta_k)\right]\phi(h_k).
-\]
-Here, \(J_E\) and \(J_I\) control tuned excitation and uniform inhibition, respectively, while \(\phi\) represents the neuronal response function.
+]
+
+Here, (J_E) and (J_I) control tuned excitation and uniform inhibition, respectively, while (\phi) represents the neuronal response function.
+
 
 ### Numerical Analysis
 The current implementation includes:
