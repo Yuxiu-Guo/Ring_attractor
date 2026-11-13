@@ -19,16 +19,22 @@ The analysis focuses on a network of **N = 6 neurons**, comparing:
 3. How sensitive is orientation memory performance to perturbations in excitatory and inhibitory connectivity?
 4. How does neuronal nonlinearity influence the relationship between connectivity tuning precision and memory performance?
 
-### Model
+
+## Model
 
 We consider the recurrent network:
 
--h_j+c_{\mathrm{ff}}
-+\frac{1}{N}\sum_k
-\left[J_I+J_E\cos(\theta_j-\theta_k)\right]\phi(h_k).
-]
+$$
+\tau \frac{dh_j}{dt}
+=
+-h_j + c_{\mathrm{ff}}
++ \frac{1}{N}\sum_k
+\left[
+J_I + J_E\cos(\theta_j-\theta_k)
+\right]\phi(h_k).
+$$
 
-Here, (J_E) and (J_I) control tuned excitation and uniform inhibition, respectively, while (\phi) represents the neuronal response function.
+Here, $J_E$ and $J_I$ control tuned excitation and uniform inhibition, respectively, while $\phi$ represents the neuronal response function.
 
 
 ### Numerical Analysis
